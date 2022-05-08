@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class JsonParser1ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }
