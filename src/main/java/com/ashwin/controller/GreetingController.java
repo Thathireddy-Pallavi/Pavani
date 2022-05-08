@@ -39,7 +39,7 @@ public class GreetingController {
 		// setting the name and email to the Model greeting.html
 		model.addAttribute("name", name);
 		model.addAttribute("email", email);
-		System.out.println("Calling the /greeting get method.");
+		logger.println("Calling the /greeting get method.");
 		// add name and email to database spring_db
 		return "userdetails";
 	}
@@ -63,7 +63,7 @@ public class GreetingController {
 		
 		detailsRepository.save(details);
 		
-		System.out.println("Calling the /greeting get method.");
+		logger.println("Calling the /greeting get method.");
 		// add name and email to database spring_db
 		model.addAttribute("userDetails", detailsRepository.findAll());
 		
@@ -84,7 +84,7 @@ public class GreetingController {
 	public String markList(@RequestParam(name = "email", required = true) String email, Model model) {
 
 //		// randomly insert marks for this id. this is just a simulation
-//		Marks mark = new Marks();
+
 //		mark.setId(id);
 //		mark.setMaths((int) (Math.random() * 100));
 //		mark.setEnglish((int) (Math.random() * 100));
