@@ -85,13 +85,6 @@ public class GreetingController {
 
 //		// randomly insert marks for this id. this is just a simulation
 
-//		mark.setId(id);
-//		mark.setMaths((int) (Math.random() * 100));
-//		mark.setEnglish((int) (Math.random() * 100));
-//		mark.setDsp((int) (Math.random() * 100));
-//		mark.setMpmc((int) (Math.random() * 100));
-//
-//		marksRepository.save(mark);
 
 		model.addAttribute("markDetails", marksRepository.findByEmail(email));
 
