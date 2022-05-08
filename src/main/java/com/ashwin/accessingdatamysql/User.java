@@ -2,6 +2,7 @@ package com.ashwin.accessingdatamysql;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GeneratedType;
 import javax.persistence.Id;
 
 @Entity // This tells Hibernate to make a table out of this class
